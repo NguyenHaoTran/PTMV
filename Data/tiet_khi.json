@@ -1,0 +1,1092 @@
+{
+  "2025": [
+    {
+      "stt": 23,
+      "ten": "Tiểu Hàn",
+      "solarDate": "2025-01-05",
+      "solarTime": "09:35",
+      "lunarDate": "2024-12-06",
+      "kinhDo": 285,
+      "phanLoai": "Tiểu khí"
+    },
+    {
+      "stt": 24,
+      "ten": "Đại Hàn",
+      "solarDate": "2025-01-20",
+      "solarTime": "02:56",
+      "lunarDate": "2024-12-21",
+      "kinhDo": 300,
+      "phanLoai": "Trung khí"
+    },
+    {
+      "stt": 1,
+      "ten": "Lập Xuân",
+      "solarDate": "2025-02-03",
+      "solarTime": "21:11",
+      "lunarDate": "2025-01-06",
+      "kinhDo": 315,
+      "phanLoai": "Tiểu khí"
+    },
+    {
+      "stt": 2,
+      "ten": "Vũ Thủy",
+      "solarDate": "2025-02-18",
+      "solarTime": "17:01",
+      "lunarDate": "2025-01-21",
+      "kinhDo": 330,
+      "phanLoai": "Trung khí"
+    },
+    {
+      "stt": 3,
+      "ten": "Kinh Trập",
+      "solarDate": "2025-03-05",
+      "solarTime": "15:05",
+      "lunarDate": "2025-02-06",
+      "kinhDo": 345,
+      "phanLoai": "Tiểu khí"
+    },
+    {
+      "stt": 4,
+      "ten": "Xuân Phân",
+      "solarDate": "2025-03-20",
+      "solarTime": "15:53",
+      "lunarDate": "2025-02-21",
+      "kinhDo": 0,
+      "phanLoai": "Trung khí"
+    },
+    {
+      "stt": 5,
+      "ten": "Thanh Minh",
+      "solarDate": "2025-04-04",
+      "solarTime": "19:44",
+      "lunarDate": "2025-03-07",
+      "kinhDo": 15,
+      "phanLoai": "Tiểu khí"
+    },
+    {
+      "stt": 6,
+      "ten": "Cốc Vũ",
+      "solarDate": "2025-04-20",
+      "solarTime": "02:47",
+      "lunarDate": "2025-03-23",
+      "kinhDo": 30,
+      "phanLoai": "Trung khí"
+    },
+    {
+      "stt": 7,
+      "ten": "Lập Hạ",
+      "solarDate": "2025-05-05",
+      "solarTime": "12:54",
+      "lunarDate": "2025-04-08",
+      "kinhDo": 45,
+      "phanLoai": "Tiểu khí"
+    },
+    {
+      "stt": 8,
+      "ten": "Tiểu Mãn",
+      "solarDate": "2025-05-21",
+      "solarTime": "01:48",
+      "lunarDate": "2025-04-24",
+      "kinhDo": 60,
+      "phanLoai": "Trung khí"
+    },
+    {
+      "stt": 9,
+      "ten": "Mang Chủng",
+      "solarDate": "2025-06-05",
+      "solarTime": "16:58",
+      "lunarDate": "2025-05-10",
+      "kinhDo": 75,
+      "phanLoai": "Tiểu khí"
+    },
+    {
+      "stt": 10,
+      "ten": "Hạ Chí",
+      "solarDate": "2025-06-21",
+      "solarTime": "09:42",
+      "lunarDate": "2025-05-26",
+      "kinhDo": 90,
+      "phanLoai": "Trung khí"
+    },
+    {
+      "stt": 11,
+      "ten": "Tiểu Thử",
+      "solarDate": "2025-07-07",
+      "solarTime": "03:11",
+      "lunarDate": "2025-06-13",
+      "kinhDo": 105,
+      "phanLoai": "Tiểu khí"
+    },
+    {
+      "stt": 12,
+      "ten": "Đại Thử",
+      "solarDate": "2025-07-22",
+      "solarTime": "20:35",
+      "lunarDate": "2025-06-28",
+      "kinhDo": 120,
+      "phanLoai": "Trung khí"
+    },
+    {
+      "stt": 13,
+      "ten": "Lập Thu",
+      "solarDate": "2025-08-07",
+      "solarTime": "13:02",
+      "lunarDate": "2025-06-14 (+)",
+      "kinhDo": 135,
+      "phanLoai": "Tiểu khí"
+    },
+    {
+      "stt": 14,
+      "ten": "Xử Thử",
+      "solarDate": "2025-08-23",
+      "solarTime": "03:45",
+      "lunarDate": "2025-07-01",
+      "kinhDo": 150,
+      "phanLoai": "Trung khí"
+    },
+    {
+      "stt": 15,
+      "ten": "Bạch Lộ",
+      "solarDate": "2025-09-07",
+      "solarTime": "16:04",
+      "lunarDate": "2025-07-16",
+      "kinhDo": 165,
+      "phanLoai": "Tiểu khí"
+    },
+    {
+      "stt": 16,
+      "ten": "Thu Phân",
+      "solarDate": "2025-09-23",
+      "solarTime": "01:32",
+      "lunarDate": "2025-08-02",
+      "kinhDo": 180,
+      "phanLoai": "Trung khí"
+    },
+    {
+      "stt": 17,
+      "ten": "Hàn Lộ",
+      "solarDate": "2025-10-08",
+      "solarTime": "07:52",
+      "lunarDate": "2025-08-17",
+      "kinhDo": 195,
+      "phanLoai": "Tiểu khí"
+    },
+    {
+      "stt": 18,
+      "ten": "Sương Giáng",
+      "solarDate": "2025-10-23",
+      "solarTime": "11:02",
+      "lunarDate": "2025-09-03",
+      "kinhDo": 210,
+      "phanLoai": "Trung khí"
+    },
+    {
+      "stt": 19,
+      "ten": "Lập Đông",
+      "solarDate": "2025-11-07",
+      "solarTime": "11:11",
+      "lunarDate": "2025-09-18",
+      "kinhDo": 225,
+      "phanLoai": "Tiểu khí"
+    },
+    {
+      "stt": 20,
+      "ten": "Tiểu Tuyết",
+      "solarDate": "2025-11-22",
+      "solarTime": "08:42",
+      "lunarDate": "2025-10-03",
+      "kinhDo": 240,
+      "phanLoai": "Trung khí"
+    },
+    {
+      "stt": 21,
+      "ten": "Đại Tuyết",
+      "solarDate": "2025-12-07",
+      "solarTime": "04:08",
+      "lunarDate": "2025-10-18",
+      "kinhDo": 255,
+      "phanLoai": "Tiểu khí"
+    },
+    {
+      "stt": 22,
+      "ten": "Đông Chí",
+      "solarDate": "2025-12-21",
+      "solarTime": "22:06",
+      "lunarDate": "2025-11-02",
+      "kinhDo": 270,
+      "phanLoai": "Trung khí"
+    }
+  ],
+  "2026": [
+    {
+      "stt": 23,
+      "ten": "Tiểu Hàn",
+      "solarDate": "2026-01-05",
+      "solarTime": "15:24",
+      "lunarDate": "2025-11-17",
+      "kinhDo": 285,
+      "phanLoai": "Tiểu khí"
+    },
+    {
+      "stt": 24,
+      "ten": "Đại Hàn",
+      "solarDate": "2026-01-20",
+      "solarTime": "08:46",
+      "lunarDate": "2025-12-02",
+      "kinhDo": 300,
+      "phanLoai": "Trung khí"
+    },
+    {
+      "stt": 1,
+      "ten": "Lập Xuân",
+      "solarDate": "2026-02-04",
+      "solarTime": "03:00",
+      "lunarDate": "2025-12-17",
+      "kinhDo": 315,
+      "phanLoai": "Tiểu khí"
+    },
+    {
+      "stt": 2,
+      "ten": "Vũ Thủy",
+      "solarDate": "2026-02-18",
+      "solarTime": "22:50",
+      "lunarDate": "2026-01-02",
+      "kinhDo": 330,
+      "phanLoai": "Trung khí"
+    },
+    {
+      "stt": 3,
+      "ten": "Kinh Trập",
+      "solarDate": "2026-03-05",
+      "solarTime": "20:54",
+      "lunarDate": "2026-01-17",
+      "kinhDo": 345,
+      "phanLoai": "Tiểu khí"
+    },
+    {
+      "stt": 4,
+      "ten": "Xuân Phân",
+      "solarDate": "2026-03-20",
+      "solarTime": "21:42",
+      "lunarDate": "2026-02-02",
+      "kinhDo": 0,
+      "phanLoai": "Trung khí"
+    },
+    {
+      "stt": 5,
+      "ten": "Thanh Minh",
+      "solarDate": "2026-04-05",
+      "solarTime": "01:33",
+      "lunarDate": "2026-02-18",
+      "kinhDo": 15,
+      "phanLoai": "Tiểu khí"
+    },
+    {
+      "stt": 6,
+      "ten": "Cốc Vũ",
+      "solarDate": "2026-04-20",
+      "solarTime": "08:35",
+      "lunarDate": "2026-03-04",
+      "kinhDo": 30,
+      "phanLoai": "Trung khí"
+    },
+    {
+      "stt": 7,
+      "ten": "Lập Hạ",
+      "solarDate": "2026-05-05",
+      "solarTime": "18:43",
+      "lunarDate": "2026-03-19",
+      "kinhDo": 45,
+      "phanLoai": "Tiểu khí"
+    },
+    {
+      "stt": 8,
+      "ten": "Tiểu Mãn",
+      "solarDate": "2026-05-21",
+      "solarTime": "07:37",
+      "lunarDate": "2026-04-05",
+      "kinhDo": 60,
+      "phanLoai": "Trung khí"
+    },
+    {
+      "stt": 9,
+      "ten": "Mang Chủng",
+      "solarDate": "2026-06-05",
+      "solarTime": "22:46",
+      "lunarDate": "2026-04-20",
+      "kinhDo": 75,
+      "phanLoai": "Tiểu khí"
+    },
+    {
+      "stt": 10,
+      "ten": "Hạ Chí",
+      "solarDate": "2026-06-21",
+      "solarTime": "15:29",
+      "lunarDate": "2026-05-07",
+      "kinhDo": 90,
+      "phanLoai": "Trung khí"
+    },
+    {
+      "stt": 11,
+      "ten": "Tiểu Thử",
+      "solarDate": "2026-07-07",
+      "solarTime": "08:59",
+      "lunarDate": "2026-05-23",
+      "kinhDo": 105,
+      "phanLoai": "Tiểu khí"
+    },
+    {
+      "stt": 12,
+      "ten": "Đại Thử",
+      "solarDate": "2026-07-23",
+      "solarTime": "02:23",
+      "lunarDate": "2026-06-10",
+      "kinhDo": 120,
+      "phanLoai": "Trung khí"
+    },
+    {
+      "stt": 13,
+      "ten": "Lập Thu",
+      "solarDate": "2026-08-07",
+      "solarTime": "18:50",
+      "lunarDate": "2026-06-25",
+      "kinhDo": 135,
+      "phanLoai": "Tiểu khí"
+    },
+    {
+      "stt": 14,
+      "ten": "Xử Thử",
+      "solarDate": "2026-08-23",
+      "solarTime": "09:33",
+      "lunarDate": "2026-07-11",
+      "kinhDo": 150,
+      "phanLoai": "Trung khí"
+    },
+    {
+      "stt": 15,
+      "ten": "Bạch Lộ",
+      "solarDate": "2026-09-07",
+      "solarTime": "21:53",
+      "lunarDate": "2026-07-26",
+      "kinhDo": 165,
+      "phanLoai": "Tiểu khí"
+    },
+    {
+      "stt": 16,
+      "ten": "Thu Phân",
+      "solarDate": "2026-09-23",
+      "solarTime": "07:21",
+      "lunarDate": "2026-08-13",
+      "kinhDo": 180,
+      "phanLoai": "Trung khí"
+    },
+    {
+      "stt": 17,
+      "ten": "Hàn Lộ",
+      "solarDate": "2026-10-08",
+      "solarTime": "13:41",
+      "lunarDate": "2026-08-28",
+      "kinhDo": 195,
+      "phanLoai": "Tiểu khí"
+    },
+    {
+      "stt": 18,
+      "ten": "Sương Giáng",
+      "solarDate": "2026-10-23",
+      "solarTime": "16:51",
+      "lunarDate": "2026-09-14",
+      "kinhDo": 210,
+      "phanLoai": "Trung khí"
+    },
+    {
+      "stt": 19,
+      "ten": "Lập Đông",
+      "solarDate": "2026-11-07",
+      "solarTime": "17:00",
+      "lunarDate": "2026-09-29",
+      "kinhDo": 225,
+      "phanLoai": "Tiểu khí"
+    },
+    {
+      "stt": 20,
+      "ten": "Tiểu Tuyết",
+      "solarDate": "2026-11-22",
+      "solarTime": "14:32",
+      "lunarDate": "2026-10-14",
+      "kinhDo": 240,
+      "phanLoai": "Trung khí"
+    },
+    {
+      "stt": 21,
+      "ten": "Đại Tuyết",
+      "solarDate": "2026-12-07",
+      "solarTime": "09:57",
+      "lunarDate": "2026-10-29",
+      "kinhDo": 255,
+      "phanLoai": "Tiểu khí"
+    },
+    {
+      "stt": 22,
+      "ten": "Đông Chí",
+      "solarDate": "2026-12-22",
+      "solarTime": "03:56",
+      "lunarDate": "2026-11-14",
+      "kinhDo": 270,
+      "phanLoai": "Trung khí"
+    }
+  ],
+  "2027": [
+    {
+      "stt": 23,
+      "ten": "Tiểu Hàn",
+      "solarDate": "2027-01-05",
+      "solarTime": "21:14",
+      "lunarDate": "2026-11-28",
+      "kinhDo": 285,
+      "phanLoai": "Tiểu khí"
+    },
+    {
+      "stt": 24,
+      "ten": "Đại Hàn",
+      "solarDate": "2027-01-20",
+      "solarTime": "14:35",
+      "lunarDate": "2026-12-13",
+      "kinhDo": 300,
+      "phanLoai": "Trung khí"
+    },
+    {
+      "stt": 1,
+      "ten": "Lập Xuân",
+      "solarDate": "2027-02-04",
+      "solarTime": "08:50",
+      "lunarDate": "2026-12-28",
+      "kinhDo": 315,
+      "phanLoai": "Tiểu khí"
+    },
+    {
+      "stt": 2,
+      "ten": "Vũ Thủy",
+      "solarDate": "2027-02-19",
+      "solarTime": "04:39",
+      "lunarDate": "2027-01-14",
+      "kinhDo": 330,
+      "phanLoai": "Trung khí"
+    },
+    {
+      "stt": 3,
+      "ten": "Kinh Trập",
+      "solarDate": "2027-03-06",
+      "solarTime": "02:43",
+      "lunarDate": "2027-01-29",
+      "kinhDo": 345,
+      "phanLoai": "Tiểu khí"
+    },
+    {
+      "stt": 4,
+      "ten": "Xuân Phân",
+      "solarDate": "2027-03-21",
+      "solarTime": "03:31",
+      "lunarDate": "2027-02-14",
+      "kinhDo": 0,
+      "phanLoai": "Trung khí"
+    },
+    {
+      "stt": 5,
+      "ten": "Thanh Minh",
+      "solarDate": "2027-04-05",
+      "solarTime": "07:22",
+      "lunarDate": "2027-02-29",
+      "kinhDo": 15,
+      "phanLoai": "Tiểu khí"
+    },
+    {
+      "stt": 6,
+      "ten": "Cốc Vũ",
+      "solarDate": "2027-04-20",
+      "solarTime": "14:24",
+      "lunarDate": "2027-03-14",
+      "kinhDo": 30,
+      "phanLoai": "Trung khí"
+    },
+    {
+      "stt": 7,
+      "ten": "Lập Hạ",
+      "solarDate": "2027-05-06",
+      "solarTime": "00:31",
+      "lunarDate": "2027-04-01",
+      "kinhDo": 45,
+      "phanLoai": "Tiểu khí"
+    },
+    {
+      "stt": 8,
+      "ten": "Tiểu Mãn",
+      "solarDate": "2027-05-21",
+      "solarTime": "13:25",
+      "lunarDate": "2027-04-16",
+      "kinhDo": 60,
+      "phanLoai": "Trung khí"
+    },
+    {
+      "stt": 9,
+      "ten": "Mang Chủng",
+      "solarDate": "2027-06-06",
+      "solarTime": "04:34",
+      "lunarDate": "2027-05-02",
+      "kinhDo": 75,
+      "phanLoai": "Tiểu khí"
+    },
+    {
+      "stt": 10,
+      "ten": "Hạ Chí",
+      "solarDate": "2027-06-21",
+      "solarTime": "21:17",
+      "lunarDate": "2027-05-17",
+      "kinhDo": 90,
+      "phanLoai": "Trung khí"
+    },
+    {
+      "stt": 11,
+      "ten": "Tiểu Thử",
+      "solarDate": "2027-07-07",
+      "solarTime": "14:47",
+      "lunarDate": "2027-06-04",
+      "kinhDo": 105,
+      "phanLoai": "Tiểu khí"
+    },
+    {
+      "stt": 12,
+      "ten": "Đại Thử",
+      "solarDate": "2027-07-23",
+      "solarTime": "08:11",
+      "lunarDate": "2027-06-20",
+      "kinhDo": 120,
+      "phanLoai": "Trung khí"
+    },
+    {
+      "stt": 13,
+      "ten": "Lập Thu",
+      "solarDate": "2027-08-08",
+      "solarTime": "00:38",
+      "lunarDate": "2027-07-07",
+      "kinhDo": 135,
+      "phanLoai": "Tiểu khí"
+    },
+    {
+      "stt": 14,
+      "ten": "Xử Thử",
+      "solarDate": "2027-08-23",
+      "solarTime": "15:21",
+      "lunarDate": "2027-07-22",
+      "kinhDo": 150,
+      "phanLoai": "Trung khí"
+    },
+    {
+      "stt": 15,
+      "ten": "Bạch Lộ",
+      "solarDate": "2027-09-08",
+      "solarTime": "03:41",
+      "lunarDate": "2027-08-08",
+      "kinhDo": 165,
+      "phanLoai": "Tiểu khí"
+    },
+    {
+      "stt": 16,
+      "ten": "Thu Phân",
+      "solarDate": "2027-09-23",
+      "solarTime": "13:09",
+      "lunarDate": "2027-08-23",
+      "kinhDo": 180,
+      "phanLoai": "Trung khí"
+    },
+    {
+      "stt": 17,
+      "ten": "Hàn Lộ",
+      "solarDate": "2027-10-08",
+      "solarTime": "19:30",
+      "lunarDate": "2027-09-09",
+      "kinhDo": 195,
+      "phanLoai": "Tiểu khí"
+    },
+    {
+      "stt": 18,
+      "ten": "Sương Giáng",
+      "solarDate": "2027-10-23",
+      "solarTime": "22:40",
+      "lunarDate": "2027-09-24",
+      "kinhDo": 210,
+      "phanLoai": "Trung khí"
+    },
+    {
+      "stt": 19,
+      "ten": "Lập Đông",
+      "solarDate": "2027-11-07",
+      "solarTime": "22:49",
+      "lunarDate": "2027-10-10",
+      "kinhDo": 225,
+      "phanLoai": "Tiểu khí"
+    },
+    {
+      "stt": 20,
+      "ten": "Tiểu Tuyết",
+      "solarDate": "2027-11-22",
+      "solarTime": "20:21",
+      "lunarDate": "2027-10-25",
+      "kinhDo": 240,
+      "phanLoai": "Trung khí"
+    },
+    {
+      "stt": 21,
+      "ten": "Đại Tuyết",
+      "solarDate": "2027-12-07",
+      "solarTime": "15:47",
+      "lunarDate": "2027-11-10",
+      "kinhDo": 255,
+      "phanLoai": "Tiểu khí"
+    },
+    {
+      "stt": 22,
+      "ten": "Đông Chí",
+      "solarDate": "2027-12-22",
+      "solarTime": "09:46",
+      "lunarDate": "2027-11-25",
+      "kinhDo": 270,
+      "phanLoai": "Trung khí"
+    }
+  ],
+  "2028": [
+    {
+      "stt": 23,
+      "ten": "Tiểu Hàn",
+      "solarDate": "2028-01-06",
+      "solarTime": "03:03",
+      "lunarDate": "2027-12-10",
+      "kinhDo": 285,
+      "phanLoai": "Tiểu khí"
+    },
+    {
+      "stt": 24,
+      "ten": "Đại Hàn",
+      "solarDate": "2028-01-20",
+      "solarTime": "20:25",
+      "lunarDate": "2027-12-24",
+      "kinhDo": 300,
+      "phanLoai": "Trung khí"
+    },
+    {
+      "stt": 1,
+      "ten": "Lập Xuân",
+      "solarDate": "2028-02-04",
+      "solarTime": "14:39",
+      "lunarDate": "2028-01-10",
+      "kinhDo": 315,
+      "phanLoai": "Tiểu khí"
+    },
+    {
+      "stt": 2,
+      "ten": "Vũ Thủy",
+      "solarDate": "2028-02-19",
+      "solarTime": "10:29",
+      "lunarDate": "2028-01-25",
+      "kinhDo": 330,
+      "phanLoai": "Trung khí"
+    },
+    {
+      "stt": 3,
+      "ten": "Kinh Trập",
+      "solarDate": "2028-03-05",
+      "solarTime": "08:32",
+      "lunarDate": "2028-02-10",
+      "kinhDo": 345,
+      "phanLoai": "Tiểu khí"
+    },
+    {
+      "stt": 4,
+      "ten": "Xuân Phân",
+      "solarDate": "2028-03-20",
+      "solarTime": "09:20",
+      "lunarDate": "2028-02-25",
+      "kinhDo": 0,
+      "phanLoai": "Trung khí"
+    },
+    {
+      "stt": 5,
+      "ten": "Thanh Minh",
+      "solarDate": "2028-04-04",
+      "solarTime": "13:10",
+      "lunarDate": "2028-03-10",
+      "kinhDo": 15,
+      "phanLoai": "Tiểu khí"
+    },
+    {
+      "stt": 6,
+      "ten": "Cốc Vũ",
+      "solarDate": "2028-04-19",
+      "solarTime": "20:12",
+      "lunarDate": "2028-03-25",
+      "kinhDo": 30,
+      "phanLoai": "Trung khí"
+    },
+    {
+      "stt": 7,
+      "ten": "Lập Hạ",
+      "solarDate": "2028-05-05",
+      "solarTime": "06:19",
+      "lunarDate": "2028-04-11",
+      "kinhDo": 45,
+      "phanLoai": "Tiểu khí"
+    },
+    {
+      "stt": 8,
+      "ten": "Tiểu Mãn",
+      "solarDate": "2028-05-20",
+      "solarTime": "19:13",
+      "lunarDate": "2028-04-26",
+      "kinhDo": 60,
+      "phanLoai": "Trung khí"
+    },
+    {
+      "stt": 9,
+      "ten": "Mang Chủng",
+      "solarDate": "2028-06-05",
+      "solarTime": "10:22",
+      "lunarDate": "2028-05-13",
+      "kinhDo": 75,
+      "phanLoai": "Tiểu khí"
+    },
+    {
+      "stt": 10,
+      "ten": "Hạ Chí",
+      "solarDate": "2028-06-21",
+      "solarTime": "03:05",
+      "lunarDate": "2028-05-29",
+      "kinhDo": 90,
+      "phanLoai": "Trung khí"
+    },
+    {
+      "stt": 11,
+      "ten": "Tiểu Thử",
+      "solarDate": "2028-07-06",
+      "solarTime": "20:35",
+      "lunarDate": "2028-05-14 (+)",
+      "kinhDo": 105,
+      "phanLoai": "Tiểu khí"
+    },
+    {
+      "stt": 12,
+      "ten": "Đại Thử",
+      "solarDate": "2028-07-22",
+      "solarTime": "13:59",
+      "lunarDate": "2028-06-01",
+      "kinhDo": 120,
+      "phanLoai": "Trung khí"
+    },
+    {
+      "stt": 13,
+      "ten": "Lập Thu",
+      "solarDate": "2028-08-07",
+      "solarTime": "06:26",
+      "lunarDate": "2028-06-17",
+      "kinhDo": 135,
+      "phanLoai": "Tiểu khí"
+    },
+    {
+      "stt": 14,
+      "ten": "Xử Thử",
+      "solarDate": "2028-08-22",
+      "solarTime": "21:09",
+      "lunarDate": "2028-07-03",
+      "kinhDo": 150,
+      "phanLoai": "Trung khí"
+    },
+    {
+      "stt": 15,
+      "ten": "Bạch Lộ",
+      "solarDate": "2028-09-07",
+      "solarTime": "09:29",
+      "lunarDate": "2028-07-19",
+      "kinhDo": 165,
+      "phanLoai": "Tiểu khí"
+    },
+    {
+      "stt": 16,
+      "ten": "Thu Phân",
+      "solarDate": "2028-09-22",
+      "solarTime": "18:58",
+      "lunarDate": "2028-08-04",
+      "kinhDo": 180,
+      "phanLoai": "Trung khí"
+    },
+    {
+      "stt": 17,
+      "ten": "Hàn Lộ",
+      "solarDate": "2028-10-08",
+      "solarTime": "01:18",
+      "lunarDate": "2028-08-20",
+      "kinhDo": 195,
+      "phanLoai": "Tiểu khí"
+    },
+    {
+      "stt": 18,
+      "ten": "Sương Giáng",
+      "solarDate": "2028-10-23",
+      "solarTime": "04:29",
+      "lunarDate": "2028-09-06",
+      "kinhDo": 210,
+      "phanLoai": "Trung khí"
+    },
+    {
+      "stt": 19,
+      "ten": "Lập Đông",
+      "solarDate": "2028-11-07",
+      "solarTime": "04:39",
+      "lunarDate": "2028-09-21",
+      "kinhDo": 225,
+      "phanLoai": "Tiểu khí"
+    },
+    {
+      "stt": 20,
+      "ten": "Tiểu Tuyết",
+      "solarDate": "2028-11-22",
+      "solarTime": "02:10",
+      "lunarDate": "2028-10-07",
+      "kinhDo": 240,
+      "phanLoai": "Trung khí"
+    },
+    {
+      "stt": 21,
+      "ten": "Đại Tuyết",
+      "solarDate": "2028-12-06",
+      "solarTime": "21:36",
+      "lunarDate": "2028-10-21",
+      "kinhDo": 255,
+      "phanLoai": "Tiểu khí"
+    },
+    {
+      "stt": 22,
+      "ten": "Đông Chí",
+      "solarDate": "2028-12-21",
+      "solarTime": "15:35",
+      "lunarDate": "2028-11-06",
+      "kinhDo": 270,
+      "phanLoai": "Trung khí"
+    }
+  ],
+  "2029": [
+    {
+      "stt": 23,
+      "ten": "Tiểu Hàn",
+      "solarDate": "2029-01-05",
+      "solarTime": "08:53",
+      "lunarDate": "2028-11-21",
+      "kinhDo": 285,
+      "phanLoai": "Tiểu khí"
+    },
+    {
+      "stt": 24,
+      "ten": "Đại Hàn",
+      "solarDate": "2029-01-20",
+      "solarTime": "02:15",
+      "lunarDate": "2028-12-06",
+      "kinhDo": 300,
+      "phanLoai": "Trung khí"
+    },
+    {
+      "stt": 1,
+      "ten": "Lập Xuân",
+      "solarDate": "2029-02-03",
+      "solarTime": "20:29",
+      "lunarDate": "2028-12-20",
+      "kinhDo": 315,
+      "phanLoai": "Tiểu khí"
+    },
+    {
+      "stt": 2,
+      "ten": "Vũ Thủy",
+      "solarDate": "2029-02-18",
+      "solarTime": "16:18",
+      "lunarDate": "2029-01-06",
+      "kinhDo": 330,
+      "phanLoai": "Trung khí"
+    },
+    {
+      "stt": 3,
+      "ten": "Kinh Trập",
+      "solarDate": "2029-03-05",
+      "solarTime": "14:21",
+      "lunarDate": "2029-01-21",
+      "kinhDo": 345,
+      "phanLoai": "Tiểu khí"
+    },
+    {
+      "stt": 4,
+      "ten": "Xuân Phân",
+      "solarDate": "2029-03-20",
+      "solarTime": "15:09",
+      "lunarDate": "2029-02-06",
+      "kinhDo": 0,
+      "phanLoai": "Trung khí"
+    },
+    {
+      "stt": 5,
+      "ten": "Thanh Minh",
+      "solarDate": "2029-04-04",
+      "solarTime": "18:59",
+      "lunarDate": "2029-02-21",
+      "kinhDo": 15,
+      "phanLoai": "Tiểu khí"
+    },
+    {
+      "stt": 6,
+      "ten": "Cốc Vũ",
+      "solarDate": "2029-04-20",
+      "solarTime": "02:01",
+      "lunarDate": "2029-03-07",
+      "kinhDo": 30,
+      "phanLoai": "Trung khí"
+    },
+    {
+      "stt": 7,
+      "ten": "Lập Hạ",
+      "solarDate": "2029-05-05",
+      "solarTime": "12:08",
+      "lunarDate": "2029-03-22",
+      "kinhDo": 45,
+      "phanLoai": "Tiểu khí"
+    },
+    {
+      "stt": 8,
+      "ten": "Tiểu Mãn",
+      "solarDate": "2029-05-21",
+      "solarTime": "01:01",
+      "lunarDate": "2029-04-09",
+      "kinhDo": 60,
+      "phanLoai": "Trung khí"
+    },
+    {
+      "stt": 9,
+      "ten": "Mang Chủng",
+      "solarDate": "2029-06-05",
+      "solarTime": "16:10",
+      "lunarDate": "2029-04-24",
+      "kinhDo": 75,
+      "phanLoai": "Tiểu khí"
+    },
+    {
+      "stt": 10,
+      "ten": "Hạ Chí",
+      "solarDate": "2029-06-21",
+      "solarTime": "08:53",
+      "lunarDate": "2029-05-10",
+      "kinhDo": 90,
+      "phanLoai": "Trung khí"
+    },
+    {
+      "stt": 11,
+      "ten": "Tiểu Thử",
+      "solarDate": "2029-07-07",
+      "solarTime": "02:23",
+      "lunarDate": "2029-05-26",
+      "kinhDo": 105,
+      "phanLoai": "Tiểu khí"
+    },
+    {
+      "stt": 12,
+      "ten": "Đại Thử",
+      "solarDate": "2029-07-22",
+      "solarTime": "19:47",
+      "lunarDate": "2029-06-12",
+      "kinhDo": 120,
+      "phanLoai": "Trung khí"
+    },
+    {
+      "stt": 13,
+      "ten": "Lập Thu",
+      "solarDate": "2029-08-07",
+      "solarTime": "12:14",
+      "lunarDate": "2029-06-28",
+      "kinhDo": 135,
+      "phanLoai": "Tiểu khí"
+    },
+    {
+      "stt": 14,
+      "ten": "Xử Thử",
+      "solarDate": "2029-08-23",
+      "solarTime": "02:58",
+      "lunarDate": "2029-07-14",
+      "kinhDo": 150,
+      "phanLoai": "Trung khí"
+    },
+    {
+      "stt": 15,
+      "ten": "Bạch Lộ",
+      "solarDate": "2029-09-07",
+      "solarTime": "15:18",
+      "lunarDate": "2029-07-29",
+      "kinhDo": 165,
+      "phanLoai": "Tiểu khí"
+    },
+    {
+      "stt": 16,
+      "ten": "Thu Phân",
+      "solarDate": "2029-09-23",
+      "solarTime": "00:46",
+      "lunarDate": "2029-08-16",
+      "kinhDo": 180,
+      "phanLoai": "Trung khí"
+    },
+    {
+      "stt": 17,
+      "ten": "Hàn Lộ",
+      "solarDate": "2029-10-08",
+      "solarTime": "07:07",
+      "lunarDate": "2029-09-01",
+      "kinhDo": 195,
+      "phanLoai": "Tiểu khí"
+    },
+    {
+      "stt": 18,
+      "ten": "Sương Giáng",
+      "solarDate": "2029-10-23",
+      "solarTime": "10:18",
+      "lunarDate": "2029-09-16",
+      "kinhDo": 210,
+      "phanLoai": "Trung khí"
+    },
+    {
+      "stt": 19,
+      "ten": "Lập Đông",
+      "solarDate": "2029-11-07",
+      "solarTime": "10:28",
+      "lunarDate": "2029-10-02",
+      "kinhDo": 225,
+      "phanLoai": "Tiểu khí"
+    },
+    {
+      "stt": 20,
+      "ten": "Tiểu Tuyết",
+      "solarDate": "2029-11-22",
+      "solarTime": "08:00",
+      "lunarDate": "2029-10-17",
+      "kinhDo": 240,
+      "phanLoai": "Trung khí"
+    },
+    {
+      "stt": 21,
+      "ten": "Đại Tuyết",
+      "solarDate": "2029-12-07",
+      "solarTime": "03:26",
+      "lunarDate": "2029-11-03",
+      "kinhDo": 255,
+      "phanLoai": "Tiểu khí"
+    },
+    {
+      "stt": 22,
+      "ten": "Đông Chí",
+      "solarDate": "2029-12-21",
+      "solarTime": "21:25",
+      "lunarDate": "2029-11-17",
+      "kinhDo": 270,
+      "phanLoai": "Trung khí"
+    }
+  ]
+}

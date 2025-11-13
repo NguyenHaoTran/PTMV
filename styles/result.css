@@ -1,0 +1,237 @@
+.result {
+  background: #fff9e6;
+  border: 1px solid var(--border);
+  border-radius: 8px;
+  padding: 16px;
+  background: url("../IMGS/sepia-plasterboard-texture.jpg") center/cover
+    no-repeat;
+  background-color: rgba(253, 240, 195, 0.9);
+  background-blend-mode: lighten;
+}
+
+.info-block ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.can-chi {
+  display: flex;
+  gap: 24px;
+  flex-wrap: wrap;
+}
+
+.can-chi > div {
+  flex: 1 1 280px;
+  /* background: #fff; */
+  /* border: 1px dashed var(--border); */
+  border-radius: 6px;
+  padding: 10px;
+}
+
+/* QUẺ – GUA */
+.hexagram-section {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 20px;
+  background: #f5edd0;
+  padding: 14px;
+  border: 1px solid var(--border);
+  border-radius: 8px;
+  background: url("../IMGS/sepia-plasterboard-texture.jpg") center/cover
+    no-repeat;
+  background-color: rgba(245, 227, 188, 0.9);
+  background-blend-mode: lighten;
+}
+
+.hex-block {
+  width: 38%;
+  text-align: center;
+}
+
+.hex-name {
+  color: #b30000;
+  margin: 8px 0 6px;
+  font-weight: 800;
+  letter-spacing: 1px;
+}
+
+.gua-diagram {
+  display: flex;
+  flex-direction: column-reverse;
+  align-items: center;
+  gap: 5px;
+  margin: 8px 0 6px;
+}
+
+.yao {
+  width: 160px;
+  height: 16px;
+  background: #000;
+}
+
+.yao.yin {
+  background: linear-gradient(
+    to right,
+    #000 0 38%,
+    transparent 38% 62%,
+    #000 62% 100%
+  );
+}
+
+.yao.moving {
+  background-color: #b30000;
+}
+
+.yao.yin.moving {
+  background: linear-gradient(
+    to right,
+    #b30000 0 38%,
+    transparent 38% 62%,
+    #b30000 62% 100%
+  );
+}
+
+.change-arrow {
+  text-align: center;
+  font-weight: 800;
+  color: #333;
+}
+
+.change-arrow span {
+  font-size: 22px;
+}
+
+.gua-family {
+  margin: 0;
+  color: #333;
+}
+
+.table-block table {
+  width: 100%;
+  border-collapse: collapse;
+  background: #fff;
+}
+
+th,
+td {
+  border: 1px solid var(--border);
+  padding: 6px;
+  text-align: center;
+}
+
+th {
+  background: #f0e2c3;
+}
+
+.analysis-block p {
+  background: #fff;
+  border: 1px dashed var(--border);
+  padding: 12px;
+  border-radius: 6px;
+}
+
+details {
+  margin-top: 8px;
+}
+
+#r-meaning {
+  padding: 8px;
+  background: #fff;
+  border: 1px dashed var(--border);
+  border-radius: 6px;
+}
+
+/* ===================== BLOCK CAN CHI & TIẾT KHÍ (SIMKINHDICH STYLE) ===================== */
+
+.kd-info-block {
+  display: flex;
+  border: 1px solid var(--border);
+  background: #f6ecd3; /* nền giấy ngả vàng */
+  border-radius: 6px;
+  padding: 10px 14px;
+  margin-bottom: 16px;
+  font-size: 14px;
+  background: url("../IMGS/sepia-plasterboard-texture.jpg") center/cover
+    no-repeat;
+  background-color: rgba(245, 227, 188, 0.9);
+  background-blend-mode: lighten;
+}
+
+.kd-info-left {
+  width: 28%;
+  /* border-right: 1px solid #e0d3ae; */
+  padding-right: 10px;
+}
+
+.kd-info-right {
+  width: 72%;
+  padding-left: 14px;
+}
+
+.kd-logo {
+  font-size: 12px;
+  font-weight: 700;
+  color: #725208;
+  margin-bottom: 8px;
+  text-transform: uppercase;
+}
+
+.kd-label-row {
+  margin: 3px 0;
+}
+
+.kd-label {
+  font-size: 13px;
+  font-weight: 600;
+  color: #725208;
+}
+
+.kd-title {
+  font-size: 15px;
+  font-weight: 800;
+  color: #725208;
+  text-transform: uppercase;
+  margin-bottom: 4px;
+}
+
+.kd-row {
+  margin: 3px 0;
+  line-height: 1.4;
+}
+
+.kd-row-small {
+  font-size: 12px;
+  color: #555;
+}
+
+.kd-label-inline {
+  font-weight: 600;
+  color: #6b5b3b;
+}
+
+.kd-value {
+  font-weight: 500;
+  color: #000000;
+}
+
+.kd-value-strong {
+  font-weight: 700;
+  color: #000;
+}
+
+.kd-sep {
+  margin: 0 6px;
+  color: #000000;
+}
+
+.logoimg {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  .img {
+    width: 70px;
+  }
+}

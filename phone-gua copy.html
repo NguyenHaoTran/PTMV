@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="vi">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Luận Số Điện Thoại – Kinh Dịch</title>
+
+    <!-- 🧩 CSS tách module -->
+    <link rel="stylesheet" href="./styles/base.css" />
+    <link rel="stylesheet" href="./styles/form.css" />
+    <link rel="stylesheet" href="./styles/layout.css" />
+    <link rel="stylesheet" href="./styles/result.css" />
+    <link rel="stylesheet" href="./styles/typography.css" />
+
+    <!-- 🧩 Font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Noto+Serif+SC:wght@400;700&display=swap"
+      rel="stylesheet" />
+
+    <!-- 🧩 Thư viện xuất PDF / chụp DOM -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/html2canvas/1.4.1/html2canvas.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.1/jspdf.umd.min.js"></script>
+    <!-- thư viện đổi lịch âm -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/lunar-javascript/0.3.0/lunar.min.js"></script>
+  </head>
+
+  <body>
+    <div class="container">
+      <header>
+        <h1>Luận Số Điện Thoại</h1>
+        <!-- <p class="subtitle">Lục Hào · Tứ Trụ · Tiết Khí</p> -->
+      </header>
+
+      <!-- FORM NHẬP DỮ LIỆU -->
+      <section class="form">
+        <h2>Nhập thông tin lập quẻ</h2>
+
+        <label for="phone">Số điện thoại *</label>
+        <input type="text" id="phone" placeholder="Ví dụ: 0988123456" />
+
+        <label for="queryDate">Ngày lập quẻ</label>
+        <input type="date" id="queryDate" />
+
+        <label for="queryTime">Giờ lập quẻ</label>
+        <input type="time" id="queryTime" />
+
+        <label for="question">Việc cần xem *</label>
+        <input
+          type="text"
+          id="question"
+          placeholder="Ví dụ: Xem công việc tháng này" />
+
+        <div class="btns">
+          <button id="calcBtn">Lập Quẻ</button>
+          <button id="exportPDF">Xuất PDF Lá Quẻ (chưa làm)</button>
+        </div>
+      </section>
+
+      <!-- KẾT QUẢ -->
+      <section id="result" class="result">
+        <!-- Thông tin lập quẻ -->
+        <!-- BLOCK CAN CHI & TIẾT KHÍ KIỂU SIMKINHDICH -->
+        <div class="kd-info-block">
+          <!-- Cột trái: nhãn -->
+          <div class="kd-info-left">
+            <div class="kd-logo">HỌC VIỆN PHONG THỦY MINH VIỆT</div>
+
+            <div class="kd-label-row">
+              <span class="kd-label">Phương pháp lập quẻ:</span>
+            </div>
+            <div class="kd-label-row">
+              <span class="kd-label">Việc cần xem:</span>
+            </div>
+            <div class="kd-label-row">
+              <span class="kd-label">Thời gian lập quẻ:</span>
+            </div>
+            <div class="kd-label-row">
+              <span class="kd-label">Can Chi:</span>
+            </div>
+            <div class="kd-label-row">
+              <span class="kd-label">Tiết khí:</span>
+            </div>
+          </div>
+
+          <!-- Cột phải: nội dung -->
+          <div class="kd-info-right">
+            <div class="kd-title">PHẦN MỀM LẬP QUẺ DỊCH</div>
+
+            <div class="kd-row">
+              <span class="kd-value-strong" id="r-method"
+                >Lập quẻ bằng Số điện thoại</span
+              >
+            </div>
+
+            <div class="kd-row">
+              <span class="kd-value" id="r-question">—</span>
+            </div>
+
+            <div class="kd-row">
+              <span class="kd-label-inline"></span>
+              <span class="kd-value" id="r-time">—</span>
+              <span class="kd-sep">|</span>
+              <span class="kd-label-inline">Theo âm lịch:</span>
+              <span class="kd-value" id="r-lunar">—</span>
+            </div>
+
+            <div class="kd-row">
+              <span class="kd-label-inline"></span>
+              <!-- dùng lại 4 id cũ -->
+              <span class="kd-value" id="r-hour">—</span>,
+              <span class="kd-value" id="r-day">—</span>,
+              <span class="kd-value" id="r-month">—</span>,
+              <span class="kd-value" id="r-year">—</span>
+            </div>
+
+            <div class="kd-row">
+              <!-- <span class="kd-label-inline">Nhật thần:</span> -->
+              <!-- <span class="kd-value" id="r-nhatthan">—</span> -->
+              <!-- <span class="kd-sep">|</span> -->
+              <!-- <span class="kd-label-inline">Nguyệt lệnh:</span> -->
+              <!-- <span class="kd-value" id="r-nguyetlenh">—</span> -->
+            </div>
+
+            <div class="kd-row">
+              <span class="kd-label-inline"></span>
+              <span class="kd-value-strong" id="r-tietkhi">—</span>
+            </div>
+
+            <div class="kd-row kd-row-small">
+              <span id="r-tietkhi-detail">—</span>
+            </div>
+
+            <div class="kd-row kd-row-small">
+              <span class="kd-label-inline">Tuần không:</span>
+              <span class="kd-value" id="r-khongvong">—</span>
+            </div>
+          </div>
+          <div class="logoimg">
+            <img class="img" src="../IMGS/LOGO-PTMV.png" alt="" />
+          </div>
+        </div>
+
+        <!-- Quẻ Chủ / Biến -->
+        <div class="hexagram-block">
+          <!-- <h2>Quẻ Chủ – Quẻ Biến</h2> -->
+          <div class="hexagram-section">
+            <!-- Quẻ chủ -->
+            <div class="hex-block">
+              <h3 class="hex-name" id="r-main-name">—</h3>
+              <div id="main-gua" class="gua-diagram"></div>
+              <p class="gua-family">Họ <span id="r-main-family">—</span></p>
+            </div>
+
+            <div class="change-arrow">
+              <p>BIẾN</p>
+              <span>→</span>
+            </div>
+
+            <!-- Quẻ biến -->
+            <div class="hex-block">
+              <h3 class="hex-name" id="r-change-name">—</h3>
+              <div id="change-gua" class="gua-diagram"></div>
+              <p class="gua-family">Họ <span id="r-change-family">—</span></p>
+            </div>
+          </div>
+
+          <p class="moving-line">
+            Hào động: <strong><span id="r-moving">—</span></strong>
+          </p>
+        </div>
+
+        <!-- Bảng Lục Hào -->
+        <div class="table-block">
+          <h2>Bảng Lục Hào</h2>
+          <table>
+            <thead>
+              <tr>
+                <th>Hào</th>
+                <th>Thế/Ứng</th>
+                <th>Lục Thân (Chủ)</th>
+                <th>Can (Chủ)</th>
+                <th>Trạng thái</th>
+                <th>Biến</th>
+                <th>Lục Thân (Biến)</th>
+                <th>Can (Biến)</th>
+                <th>Trạng thái</th>
+              </tr>
+            </thead>
+            <tbody id="r-lines">
+              <tr>
+                <td colspan="9">— Chưa có dữ liệu —</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </section>
+    </div>
+
+    <!-- JS Modules -->
+    <script type="module" src="./js/main.js"></script>
+  </body>
+</html>

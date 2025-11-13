@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="vi">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Luận Số Điện Thoại – Kinh Dịch</title>
+
+    <!-- 🧩 CSS tách module -->
+    <link rel="stylesheet" href="./styles/index.css" />
+
+    <!-- 🧩 Font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Noto+Serif+SC:wght@400;700&display=swap"
+      rel="stylesheet" />
+
+    <!-- 🧩 Thư viện xuất PDF / chụp DOM -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/html2canvas/1.4.1/html2canvas.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.1/jspdf.umd.min.js"></script>
+    <!-- thư viện đổi lịch âm -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/lunar-javascript/0.3.0/lunar.min.js"></script>
+  </head>
+
+  <body>
+    <div class="container">
+      <div class="navBar">
+        <div class="blackLine">
+          <div class="layout">
+            <p>minhvietfengshui@gmail.com</p>
+            <p>08:30 – 17:30</p>
+          </div>
+        </div>
+        <div class="nav">
+          <div class="logo">
+            <img src="../IMGS/logoweb.png" alt="" />
+          </div>
+          <div class="navLinks">
+            <a href="#">Trang Chủ</a>
+            <a href="#">Giới Thiệu</a>
+            <a href="#">Kiến Thức Phong Thủy</a>
+            <a href="#">Dịch Vụ</a>
+          </div>
+          <div class="hotline">
+            <p>08 4531 4531</p>
+          </div>
+        </div>
+      </div>
+      <!-- contents -->
+      <div class="contents">
+        <section class="cast-menu" id="gieo-que-hoi-viec">
+          <h2 class="cast-menu-title">GIEO QUẺ HỎI VIỆC</h2>
+          <div class="frameRows">
+            <!-- Hàng 1 -->
+          <div class="cast-row">
+            <article class="cast-item">
+              <a href="lap-que-luc-hao.html" class="cast-link">
+                <div class="cast-icon">
+                  <img src="../IMGS/icon-luc-hao.webp" alt="Lập quẻ Lục Hào" />
+                </div>
+                <h3>LẬP QUẺ LỤC HÀO</h3>
+              </a>
+              <p>
+                Lục Hào là môn dự đoán cổ lịch sử lâu đời. Bạn gieo 3 đồng xu 6
+                lần, nhập kết quả vào phần mềm để tính toán quẻ.
+              </p>
+            </article>
+
+            <article class="cast-item">
+              <a href="lap-que-mai-hoa.html" class="cast-link">
+                <div class="cast-icon">
+                  <img src="../IMGS/icon-mai-hoa.webp" alt="Lập quẻ Mai Hoa" />
+                </div>
+                <h3>LẬP QUẺ MAI HOA</h3>
+              </a>
+              <p>
+                Phương pháp Mai Hoa Dịch Số lập quẻ theo năm, tháng, ngày, giờ –
+                dùng cho các câu hỏi đa dạng trong cuộc sống.
+              </p>
+            </article>
+          </div>
+
+          <!-- Hàng 2 -->
+          <div class="cast-row">
+            <article class="cast-item">
+              <a href="lap-que-serial-tien.html" class="cast-link">
+                <div class="cast-icon">
+                  <img
+                    src="../IMGS/icon-boi-serial.webp"
+                    alt="Lập quẻ Serial tiền" />
+                </div>
+                <h3>LẬP QUẺ SERIAL TIỀN</h3>
+              </a>
+              <p>
+                Rút ngẫu nhiên 1 seri tiền, nhập số seri, phần mềm phân tích kết
+                hợp thời gian động tâm để tính toán chiêm ứng.
+              </p>
+            </article>
+
+            <article class="cast-item">
+              <a href="lap-que-so-menh.html" class="cast-link">
+                <div class="cast-icon">
+                  <img src="../IMGS/icon-qm.webp" alt="Lập quẻ Số mệnh" />
+                </div>
+                <h3>LẬP QUẺ SỐ MỆNH</h3>
+              </a>
+              <p>
+                Lấy quẻ theo ngày tháng năm giờ sinh để đoán tài vận, công danh,
+                sự nghiệp, gia đạo, tình cảm, con cái, hình dáng…
+              </p>
+            </article>
+          </div>
+
+          <!-- Hàng 3 – 1 ô giữa -->
+          <div class="cast-row cast-row--center">
+            <article class="cast-item">
+              <a href="phone-gua.html" class="cast-link">
+                <div class="cast-icon">
+                  <img
+                    src="../IMGS/icon-boi-so-dt.webp"
+                    alt="Lập quẻ Số điện thoại" />
+                </div>
+                <h3>LẬP QUẺ SỐ ĐIỆN THOẠI</h3>
+              </a>
+              <p>
+                Lập quẻ bằng cách dùng số điện thoại, phần mềm phân tích tổ hợp
+                số kết hợp thời gian động tâm để tính toán chiêm ứng.
+              </p>
+            </article>
+          </div>
+        </section>
+      </div>
+          </div>
+          
+
+      <footer class="mv-footer">
+        <div class="mv-footer-inner">
+          <!-- Cột 1: Logo + thông tin công ty -->
+          <div class="mv-footer-col mv-footer-col-company">
+            <div class="mv-footer-logo-wrap">
+              <img
+                src="../IMGS/LOGO-PTMV.png"
+                alt="Phong Thủy Minh Việt"
+                class="mv-footer-logo" />
+              <img
+                src="../IMGS/logo-da-thong-bao-bo-cong-thuong-mau-xanh.png"
+                alt="Đã thông báo Bộ Công Thương"
+                class="mv-footer-verify" />
+            </div>
+
+            <h3 class="mv-footer-title">
+              CÔNG TY TNHH HỌC VIỆN<br />
+              PHONG THỦY MINH VIỆT
+            </h3>
+
+            <ul class="mv-footer-list">
+              <li>
+                <strong>Địa chỉ Văn Phòng:</strong> 297/18 Huỳnh Văn Bánh, P.11,
+                Q. Phú Nhuận, TP.HCM
+              </li>
+              <li>
+                <strong>Địa chỉ Trụ Sở:</strong> 138 Đường B – Trưng Trắc, Khu
+                Phố 7, P. Hiệp Bình Chánh, Thủ Đức, TP.HCM
+              </li>
+              <li><strong>Hotline:</strong> 08 4531 4531</li>
+              <li><strong>Email:</strong> minhvietfengshui@gmail.com</li>
+              <li>
+                <strong>GPKD:</strong> 0314190665 do Sở KH &amp; ĐT TP.HCM cấp
+                ngày 09/01/2017
+              </li>
+            </ul>
+          </div>
+
+          <!-- Cột 2: Hỗ trợ khách hàng -->
+          <div class="mv-footer-col mv-footer-col-support">
+            <h3 class="mv-footer-title">HỖ TRỢ KHÁCH HÀNG</h3>
+            <ul class="mv-footer-list">
+              <li><a href="#">Chính Sách Bảo Mật Thông Tin Khách Hàng</a></li>
+              <li><a href="#">Chính Sách Đổi Trả, Kiểm Hàng</a></li>
+              <li>
+                <a href="#">Chính Sách Thanh Toán, Bán Hàng, Giao Nhận</a>
+              </li>
+              <li><a href="#">Chính Sách Hoàn Tiền, Hủy Giao Dịch</a></li>
+              <li><a href="#">Kiểm Tra Số Điện Thoại</a></li>
+            </ul>
+          </div>
+
+          <!-- Cột 3: Kết nối -->
+          <div class="mv-footer-col mv-footer-col-connect">
+            <h3 class="mv-footer-title">KẾT NỐI HỌC VIỆN</h3>
+            <div class="mv-footer-socials">
+              <a href="#" class="mv-social-btn mv-social-fb">f</a>
+              <a href="#" class="mv-social-btn mv-social-yt">▶</a>
+              <a href="#" class="mv-social-btn mv-social-cal">📅</a>
+            </div>
+
+            <h3 class="mv-footer-title mv-footer-title-sub">
+              KẾT NỐI MASTER NGUYỄN TUẤN CƯỜNG
+            </h3>
+            <a href="#" class="mv-footer-banner-link">
+              <img
+                src="../IMGS/banner-Lien-He-Final-1024x422.jpg"
+                alt="Liên hệ Master Nguyễn Tuấn Cường"
+                class="mv-footer-banner" />
+            </a>
+          </div>
+        </div>
+
+        <div class="mv-footer-bottom">
+          Bản quyền thuộc về <strong>Phong Thủy Minh Việt</strong> © 2025
+        </div>
+      </footer>
+    </div>
+
+    <!-- JS Modules -->
+    <script type="module" src="./js/main.js"></script>
+  </body>
+</html>

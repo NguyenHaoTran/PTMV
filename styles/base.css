@@ -1,0 +1,26 @@
+@import url("https://fonts.googleapis.com/css2?family=Noto+Serif+SC:wght@400;700&display=swap");
+
+:root {
+  --paper: #cacaca;
+  --ink: #2c2c2c;
+  --accent: #e62f2f;
+  --border: #b6b4b1;
+  --head: #b9b9b9;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  background: var(--paper);
+  color: var(--ink);
+  margin: 0;
+  font-family: "Noto Serif SC", serif;
+  background: url("../IMGS/Gb2.png") no-repeat;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-color: rgba(255, 255, 255, 0.7);
+  background-blend-mode: lighten;
+}
