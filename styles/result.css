@@ -23,8 +23,6 @@
 
 .can-chi > div {
   flex: 1 1 280px;
-  /* background: #fff; */
-  /* border: 1px dashed var(--border); */
   border-radius: 6px;
   padding: 10px;
 }
@@ -108,6 +106,12 @@
   color: #333;
 }
 
+/* ===================== BẢNG PHÂN TÍCH / PHỤ ===================== */
+
+.table-block {
+  margin-top: 16px;
+}
+
 .table-block table {
   width: 100%;
   border-collapse: collapse;
@@ -161,7 +165,6 @@ details {
 
 .kd-info-left {
   width: 28%;
-  /* border-right: 1px solid #e0d3ae; */
   padding-right: 10px;
 }
 
@@ -231,7 +234,81 @@ details {
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  .img {
-    width: 70px;
-  }
+}
+
+.logoimg .img {
+  width: 70px;
+}
+
+/* ========== LỤC HÀO 2 CỘT – QUẺ CHỦ / QUẺ BIẾN ========== */
+
+.luc-hao-wrapper {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 16px;
+  align-items: start;
+}
+
+.luc-hao-col {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+
+/* tiêu đề QUẺ CHỦ / QUẺ BIẾN */
+.lh-title {
+  text-align: center;
+  font-weight: 700;
+  color: #b30000;
+  margin-bottom: 2px;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+
+/* 3 bảng con trong mỗi cột */
+.lh-main,
+.lh-vs,
+.lh-stars {
+  width: 100%;
+  border-collapse: collapse;
+  background: #fcf7e8;
+}
+
+.lh-main th,
+.lh-vs th,
+.lh-stars th {
+  background: #f2e7c9;
+  font-size: 12px;
+  padding: 4px 3px;
+}
+
+.lh-main td,
+.lh-vs td,
+.lh-stars td {
+  background: #fffdfa;
+  font-size: 12px;
+  padding: 4px 3px;
+  border: 1px solid var(--border);
+  text-align: center;
+}
+
+/* chung cho tất cả table bên trong result */
+.table-block table {
+  border-collapse: collapse;
+}
+
+/* tô đỏ hàng hào động giống bản gốc */
+.row-moving td {
+  color: #cc0000;
+  font-weight: 700;
+}
+
+/* cột Hào hẹp lại, nhìn sát giống hình */
+.lh-main th:first-child,
+.lh-main td:first-child,
+.lh-vs th:first-child,
+.lh-vs td:first-child,
+.lh-main th:last-child,
+.lh-main td:last-child {
+  width: 44px;
 }

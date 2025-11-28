@@ -3,14 +3,15 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Luận Số Điện Thoại – Kinh Dịch</title>
+    <title>Luận Quẻ Hoa Mai</title>
 
     <!-- 🧩 CSS tách module -->
     <link rel="stylesheet" href="./styles/index.css" />
     <link rel="stylesheet" href="./styles/base.css" />
     <link rel="stylesheet" href="./styles/form.css" />
     <link rel="stylesheet" href="./styles/layout.css" />
-    <link rel="stylesheet" href="./styles/result.css" />
+    <!-- dùng file riêng cho Hoa Mai -->
+    <link rel="stylesheet" href="./styles/result-hoamai.css" />
     <link rel="stylesheet" href="./styles/typography.css" />
 
     <!-- 🧩 Font -->
@@ -23,6 +24,7 @@
     <!-- 🧩 Thư viện xuất PDF / chụp DOM -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/html2canvas/1.4.1/html2canvas.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.1/jspdf.umd.min.js"></script>
+
     <!-- thư viện đổi lịch âm -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/lunar-javascript/0.3.0/lunar.min.js"></script>
   </head>
@@ -36,34 +38,34 @@
             <p>08:30 – 17:30</p>
           </div>
         </div>
+
         <div class="nav">
           <div class="logo">
-            <img src="../IMGS/logoweb.png" alt="" />
+            <img src="../IMGS/logoweb.png" alt="Phong Thuỷ Minh Việt" />
           </div>
+
           <div class="navLinks">
-            <a href="index.html">Trang Chủ</a>
+            <a href="index-hoamai.html">Trang Chủ</a>
             <a href="#">Giới Thiệu</a>
             <a href="#">Kiến Thức Phong Thủy</a>
             <a href="#">Dịch Vụ</a>
           </div>
+
           <div class="hotline">
             <p>08 4531 4531</p>
           </div>
         </div>
       </div>
+
       <!-- contents -->
       <div class="container-lapque">
         <header>
-          <h1>Luận Số Điện Thoại</h1>
-          <!-- <p class="subtitle">Lục Hào · Tứ Trụ · Tiết Khí</p> -->
+          <h1>Luận Quẻ Hoa Mai</h1>
         </header>
 
         <!-- FORM NHẬP DỮ LIỆU -->
         <section class="form">
           <h2>Nhập thông tin lập quẻ</h2>
-
-          <label for="phone">Số điện thoại *</label>
-          <input type="text" id="phone" placeholder="Ví dụ: 0988123456" />
 
           <label for="queryDate">Ngày lập quẻ</label>
           <input type="date" id="queryDate" />
@@ -85,7 +87,6 @@
 
         <!-- KẾT QUẢ -->
         <section id="result" class="result">
-          <!-- Thông tin lập quẻ -->
           <!-- BLOCK CAN CHI & TIẾT KHÍ KIỂU SIMKINHDICH -->
           <div class="kd-info-block">
             <!-- Cột trái: nhãn -->
@@ -114,9 +115,9 @@
               <div class="kd-title">PHẦN MỀM LẬP QUẺ DỊCH</div>
 
               <div class="kd-row">
-                <span class="kd-value-strong" id="r-method"
-                  >Lập quẻ bằng Số điện thoại</span
-                >
+                <span class="kd-value-strong" id="r-method">
+                  Lập quẻ Hoa Mai theo ngày giờ
+                </span>
               </div>
 
               <div class="kd-row">
@@ -133,20 +134,13 @@
 
               <div class="kd-row">
                 <span class="kd-label-inline"></span>
-                <!-- dùng lại 4 id cũ -->
                 <span class="kd-value" id="r-hour">—</span>,
                 <span class="kd-value" id="r-day">—</span>,
                 <span class="kd-value" id="r-month">—</span>,
                 <span class="kd-value" id="r-year">—</span>
               </div>
 
-              <div class="kd-row">
-                <!-- <span class="kd-label-inline">Nhật thần:</span> -->
-                <!-- <span class="kd-value" id="r-nhatthan">—</span> -->
-                <!-- <span class="kd-sep">|</span> -->
-                <!-- <span class="kd-label-inline">Nguyệt lệnh:</span> -->
-                <!-- <span class="kd-value" id="r-nguyetlenh">—</span> -->
-              </div>
+              <div class="kd-row"></div>
 
               <div class="kd-row">
                 <span class="kd-label-inline"></span>
@@ -162,20 +156,32 @@
                 <span class="kd-value" id="r-khongvong">—</span>
               </div>
             </div>
+
             <div class="logoimg">
-              <img class="img" src="../IMGS/LOGO-PTMV.png" alt="" />
+              <img class="img" src="../IMGS/LOGO-PTMV.png" alt="Minh Việt" />
             </div>
           </div>
 
-          <!-- Quẻ Chủ / Biến -->
+          <!-- Quẻ Chủ / Hỗ / Biến -->
           <div class="hexagram-block">
-            <!-- <h2>Quẻ Chủ – Quẻ Biến</h2> -->
             <div class="hexagram-section">
               <!-- Quẻ chủ -->
               <div class="hex-block">
                 <h3 class="hex-name" id="r-main-name">—</h3>
                 <div id="main-gua" class="gua-diagram"></div>
                 <p class="gua-family">Họ <span id="r-main-family">—</span></p>
+              </div>
+
+              <div class="change-arrow">
+                <p>HỖ</p>
+                <span>→</span>
+              </div>
+
+              <!-- Quẻ hỗ -->
+              <div class="hex-block">
+                <h3 class="hex-name" id="r-ho-name">—</h3>
+                <div id="ho-gua" class="gua-diagram"></div>
+                <p class="gua-family">Họ <span id="r-ho-family">—</span></p>
               </div>
 
               <div class="change-arrow">
@@ -192,12 +198,13 @@
             </div>
 
             <p class="moving-line">
-              Hào động: <strong><span id="r-moving">—</span></strong>
+              Hào động:
+              <strong><span id="r-moving">—</span></strong>
             </p>
           </div>
 
           <!-- Bảng Lục Hào -->
-          <!-- <div class="table-block">
+          <div class="table-block">
             <h2>Bảng Lục Hào</h2>
             <table>
               <thead>
@@ -219,137 +226,6 @@
                 </tr>
               </tbody>
             </table>
-          </div> -->
-
-          <!-- BẢNG LỤC HÀO KIỂU SIMKINHDICH -->
-          <div class="table-block">
-            <h2>Bảng Lục Hào</h2>
-
-            <div class="luc-hao-wrapper">
-              <!-- ================== QUẺ CHỦ ================== -->
-              <div class="luc-hao-col">
-                <div class="lh-title">QUẺ CHỦ</div>
-
-                <!-- BẢNG 1: LỤC HÀO CHÍNH -->
-                <table class="lh-main">
-                  <thead>
-                    <tr>
-                      <th>Hào</th>
-                      <th>T/U</th>
-                      <th>Lục Thân</th>
-                      <th>Can Chi</th>
-                      <th>P.Thần</th>
-                      <th>T.K</th>
-                    </tr>
-                  </thead>
-                  <tbody id="r-lh-main-left">
-                    <tr>
-                      <td colspan="6">— Chưa có dữ liệu —</td>
-                    </tr>
-                  </tbody>
-                </table>
-
-                <!-- BẢNG 2: V-S, QUÝ THẦN, THẦN SÁT -->
-                <table class="lh-vs">
-                  <thead>
-                    <tr>
-                      <th>Hào</th>
-                      <th>V-S</th>
-                      <th>Q.Thần</th>
-                      <th>T.S-Ngày</th>
-                      <th>T.S-Tháng</th>
-                    </tr>
-                  </thead>
-                  <tbody id="r-lh-vs-left">
-                    <tr>
-                      <td colspan="5">— Chưa có dữ liệu —</td>
-                    </tr>
-                  </tbody>
-                </table>
-
-                <!-- BẢNG 3: LỘC, MÃ, QUÝ, ĐÀO, THẦN Y, GIẢI, MỘ -->
-                <table class="lh-stars">
-                  <thead>
-                    <tr>
-                      <th>Lộc</th>
-                      <th>Mã</th>
-                      <th>Quý</th>
-                      <th>Đào</th>
-                      <th>Thần Y</th>
-                      <th>Ng.Giải</th>
-                      <th>N.Giải</th>
-                      <th>K.Mộ</th>
-                    </tr>
-                  </thead>
-                  <tbody id="r-lh-stars-left">
-                    <tr>
-                      <td colspan="8">— Chưa có dữ liệu —</td>
-                    </tr>
-                  </tbody>
-                </table>
-              </div>
-
-              <!-- ================== QUẺ BIẾN ================== -->
-              <div class="luc-hao-col">
-                <div class="lh-title">QUẺ BIẾN</div>
-
-                <!-- BẢNG 1: LỤC HÀO BIẾN -->
-                <table class="lh-main">
-                  <thead>
-                    <tr>
-                      <th>Lục Thân</th>
-                      <th>Can Chi</th>
-                      <th>Lục Thú</th>
-                      <th>T.K</th>
-                      <th>Hào</th>
-                    </tr>
-                  </thead>
-                  <tbody id="r-lh-main-right">
-                    <tr>
-                      <td colspan="5">— Chưa có dữ liệu —</td>
-                    </tr>
-                  </tbody>
-                </table>
-
-                <!-- BẢNG 2: V-S, THẦN SÁT -->
-                <table class="lh-vs">
-                  <thead>
-                    <tr>
-                      <th>Hào</th>
-                      <th>V-S</th>
-                      <th>T.S-Ngày</th>
-                      <th>T.S-Tháng</th>
-                    </tr>
-                  </thead>
-                  <tbody id="r-lh-vs-right">
-                    <tr>
-                      <td colspan="4">— Chưa có dữ liệu —</td>
-                    </tr>
-                  </tbody>
-                </table>
-
-                <!-- BẢNG 3: LỘC, MÃ, QUÝ, ĐÀO, THẦN Y, GIẢI, MỘ -->
-                <table class="lh-stars">
-                  <thead>
-                    <tr>
-                      <th>Lộc</th>
-                      <th>Mã</th>
-                      <th>Quý</th>
-                      <th>Đào</th>
-                      <th>Thần Y</th>
-                      <th>Ng.Giải</th>
-                      <th>N.Giải</th>
-                      <th>K.Mộ</th>
-                    </tr>
-                  </thead>
-                  <tbody id="r-lh-stars-right">
-                    <tr>
-                      <td colspan="8">— Chưa có dữ liệu —</td>
-                    </tr>
-                  </tbody>
-                </table>
-              </div>
-            </div>
           </div>
         </section>
       </div>
@@ -396,7 +272,9 @@
           <div class="mv-footer-col mv-footer-col-support">
             <h3 class="mv-footer-title">HỖ TRỢ KHÁCH HÀNG</h3>
             <ul class="mv-footer-list">
-              <li><a href="#">Chính Sách Bảo Mật Thông Tin Khách Hàng</a></li>
+              <li>
+                <a href="#">Chính Sách Bảo Mật Thông Tin Khách Hàng</a>
+              </li>
               <li><a href="#">Chính Sách Đổi Trả, Kiểm Hàng</a></li>
               <li>
                 <a href="#">Chính Sách Thanh Toán, Bán Hàng, Giao Nhận</a>
@@ -409,6 +287,7 @@
           <!-- Cột 3: Kết nối -->
           <div class="mv-footer-col mv-footer-col-connect">
             <h3 class="mv-footer-title">KẾT NỐI HỌC VIỆN</h3>
+
             <div class="mv-footer-socials">
               <a href="#" class="mv-social-btn mv-social-fb">f</a>
               <a href="#" class="mv-social-btn mv-social-yt">▶</a>
@@ -418,6 +297,7 @@
             <h3 class="mv-footer-title mv-footer-title-sub">
               KẾT NỐI MASTER NGUYỄN TUẤN CƯỜNG
             </h3>
+
             <a href="#" class="mv-footer-banner-link">
               <img
                 src="../IMGS/banner-Lien-He-Final-1024x422.jpg"
@@ -434,6 +314,7 @@
     </div>
 
     <!-- JS Modules -->
-    <script type="module" src="./js/main.js"></script>
+    <!-- dùng file JS riêng cho Hoa Mai -->
+    <script type="module" src="./js/main-hoamai.js"></script>
   </body>
 </html>

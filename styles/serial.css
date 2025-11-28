@@ -1,0 +1,47 @@
+/* styles/serial.css */
+
+/* tiêu đề trang serial */
+.container-lapque header h1 {
+  font-size: 24px;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+/* note nhỏ dưới nhãn Serial tiền nếu muốn */
+.form label[for="serial"]::after {
+  content: " (chỉ lấy phần số khi lập quẻ)";
+  font-size: 12px;
+  color: #666;
+  font-weight: 400;
+}
+
+/* 3 quẻ serial – canh đều hơn chút */
+.hexagram-section-serial {
+  display: flex;
+  justify-content: space-between;
+  gap: 32px;
+}
+
+.hexagram-serial .hex-block {
+  width: 30%;
+}
+
+/* dòng label TIỂU QUỶ / THỜI MA dưới 3 quẻ */
+.serial-label-row {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  margin-top: 6px;
+  text-align: center;
+  font-size: 13px;
+  font-weight: 700;
+  color: #b30000;
+}
+
+.serial-label {
+  padding: 2px 0;
+}
+
+.serial-label-mid {
+  font-weight: 600;
+  color: #555;
+}

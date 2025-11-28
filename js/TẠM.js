@@ -309,27 +309,23 @@ function renderLucHaoTable(linesMain, linesChange, moving, nhatCan) {
   tbody.innerHTML = html;
 }
 
-/* -------------------- RENDER QUẺ (ô vuông) -------------------- */
-// lines[0] = hào 1 (dưới), lines[5] = hào 6 (trên)
+/* -------------------- RENDER-------------------- */
+
 function renderGua(containerId, lines, moving) {
   const el = document.getElementById(containerId);
   if (!el) return;
 
   el.innerHTML = "";
-
-  // B1: Lấy quẻ theo CÁCH CŨ (đang bị ngược)
   const rows = [];
   for (let i = lines.length - 1; i >= 0; i--) {
     rows.push({
-      bit: lines[i], // 1 = dương, 0 = âm
-      isMoving: i === moving - 1, // moving vẫn đếm từ dưới lên như code cũ
+      bit: lines[i],
+      isMoving: i === moving - 1,
     });
   }
 
-  // B2: Lật ngược toàn bộ quẻ (trên ↔ dưới)
   rows.reverse();
 
-  // B3: Vẽ theo thứ tự mới
   for (const row of rows) {
     const d = document.createElement("div");
     d.className =
@@ -338,14 +334,13 @@ function renderGua(containerId, lines, moving) {
   }
 }
 
-/* -------------------- KHỞI TẠO -------------------- */
+/* --------------------KHỞI TẠO -------------------- */
 window.addEventListener("DOMContentLoaded", () => {
   const now = new Date();
   setVal("queryDate", localDateStr(now));
   setVal("queryTime", localTimeStr(now));
 });
 
-/* -------------------- LẬP QUẺ -------------------- */
 document.getElementById("calcBtn").addEventListener("click", () => {
   const phone = getVal("phone").trim();
   const question = getVal("question").trim();
@@ -363,16 +358,14 @@ document.getElementById("calcBtn").addEventListener("click", () => {
   if (!tStr) tStr = localTimeStr(new Date());
   const date = new Date(`${dStr}T${tStr}`);
 
-  // Tứ trụ + phụ lục
   const tuctru = getAllCanChi(date);
   const tietkhi = getTietKhiVN(date);
   const nguyetlenh = getNguyetLenh(tuctru.month);
   const khongvong = getKhongVong(tuctru.day);
 
-  // ======= CỤM ĐẦU/CUỐI → QUẺ =======
   const P = onlyDigits(phone);
-  const head = firstN(P, 5); // Thượng quái = cụm đầu
-  const tail = lastN(P, 5); // Hạ quái = cụm cuối
+  const head = firstN(P, 5);
+  const tail = lastN(P, 5);
   const idxUpper = mod8Index(sumDigits(head));
   const idxLower = mod8Index(sumDigits(tail));
   const upperTri = trigramByIdx1to8(idxUpper);
@@ -401,7 +394,6 @@ document.getElementById("calcBtn").addEventListener("click", () => {
     HEX_NAME[changeKey] ||
     `${TRIGRAM_WORD[upperNameC]} ${TRIGRAM_WORD[lowerNameC]} (biến)`;
 
-  // ======= GÁN KẾT QUẢ LÊN UI =======
   setText("r-question", question);
   setText("r-time", `${dStr} ${tStr}`);
   setText("r-year", tuctru.year);

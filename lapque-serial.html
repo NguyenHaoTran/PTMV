@@ -3,32 +3,35 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Luận Số Điện Thoại – Kinh Dịch</title>
+    <title>Lập Quẻ Bằng Serial Tiền – Kinh Dịch</title>
 
-    <!-- 🧩 CSS tách module -->
+    <!-- CSS dùng chung của site -->
     <link rel="stylesheet" href="./styles/index.css" />
     <link rel="stylesheet" href="./styles/base.css" />
     <link rel="stylesheet" href="./styles/form.css" />
     <link rel="stylesheet" href="./styles/layout.css" />
     <link rel="stylesheet" href="./styles/result.css" />
     <link rel="stylesheet" href="./styles/typography.css" />
+    <!-- CSS riêng cho trang serial -->
+    <link rel="stylesheet" href="./styles/serial.css" />
 
-    <!-- 🧩 Font -->
+    <!-- Font -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
       href="https://fonts.googleapis.com/css2?family=Noto+Serif+SC:wght@400;700&display=swap"
       rel="stylesheet" />
 
-    <!-- 🧩 Thư viện xuất PDF / chụp DOM -->
+    <!-- Thư viện export (nếu cần sau này) -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/html2canvas/1.4.1/html2canvas.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.1/jspdf.umd.min.js"></script>
-    <!-- thư viện đổi lịch âm -->
+    <!-- Lịch âm (chưa dùng trong bản demo này) -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/lunar-javascript/0.3.0/lunar.min.js"></script>
   </head>
 
   <body>
     <div class="container">
+      <!-- NAVBAR -->
       <div class="navBar">
         <div class="blackLine">
           <div class="layout">
@@ -51,19 +54,19 @@
           </div>
         </div>
       </div>
-      <!-- contents -->
+
+      <!-- CONTENTS -->
       <div class="container-lapque">
         <header>
-          <h1>Luận Số Điện Thoại</h1>
-          <!-- <p class="subtitle">Lục Hào · Tứ Trụ · Tiết Khí</p> -->
+          <h1>Lập Quẻ Bằng Serial Tiền</h1>
         </header>
 
-        <!-- FORM NHẬP DỮ LIỆU -->
+        <!-- FORM -->
         <section class="form">
           <h2>Nhập thông tin lập quẻ</h2>
 
-          <label for="phone">Số điện thoại *</label>
-          <input type="text" id="phone" placeholder="Ví dụ: 0988123456" />
+          <label for="serial">Serial tiền *</label>
+          <input type="text" id="serial" placeholder="Ví dụ: AF 12345678" />
 
           <label for="queryDate">Ngày lập quẻ</label>
           <input type="date" id="queryDate" />
@@ -85,10 +88,8 @@
 
         <!-- KẾT QUẢ -->
         <section id="result" class="result">
-          <!-- Thông tin lập quẻ -->
-          <!-- BLOCK CAN CHI & TIẾT KHÍ KIỂU SIMKINHDICH -->
+          <!-- BLOCK CAN CHI & TIẾT KHÍ -->
           <div class="kd-info-block">
-            <!-- Cột trái: nhãn -->
             <div class="kd-info-left">
               <div class="kd-logo">HỌC VIỆN PHONG THỦY MINH VIỆT</div>
 
@@ -109,14 +110,13 @@
               </div>
             </div>
 
-            <!-- Cột phải: nội dung -->
             <div class="kd-info-right">
               <div class="kd-title">PHẦN MỀM LẬP QUẺ DỊCH</div>
 
               <div class="kd-row">
-                <span class="kd-value-strong" id="r-method"
-                  >Lập quẻ bằng Số điện thoại</span
-                >
+                <span class="kd-value-strong" id="r-method">
+                  Lập quẻ bằng Serial tiền
+                </span>
               </div>
 
               <div class="kd-row">
@@ -133,19 +133,10 @@
 
               <div class="kd-row">
                 <span class="kd-label-inline"></span>
-                <!-- dùng lại 4 id cũ -->
                 <span class="kd-value" id="r-hour">—</span>,
                 <span class="kd-value" id="r-day">—</span>,
                 <span class="kd-value" id="r-month">—</span>,
                 <span class="kd-value" id="r-year">—</span>
-              </div>
-
-              <div class="kd-row">
-                <!-- <span class="kd-label-inline">Nhật thần:</span> -->
-                <!-- <span class="kd-value" id="r-nhatthan">—</span> -->
-                <!-- <span class="kd-sep">|</span> -->
-                <!-- <span class="kd-label-inline">Nguyệt lệnh:</span> -->
-                <!-- <span class="kd-value" id="r-nguyetlenh">—</span> -->
               </div>
 
               <div class="kd-row">
@@ -162,75 +153,68 @@
                 <span class="kd-value" id="r-khongvong">—</span>
               </div>
             </div>
+
             <div class="logoimg">
               <img class="img" src="../IMGS/LOGO-PTMV.png" alt="" />
             </div>
           </div>
 
-          <!-- Quẻ Chủ / Biến -->
-          <div class="hexagram-block">
-            <!-- <h2>Quẻ Chủ – Quẻ Biến</h2> -->
-            <div class="hexagram-section">
-              <!-- Quẻ chủ -->
+          <!-- 3 QUẺ SERIAL: TIỂU QUỶ – TRUNG – THỜI MA -->
+          <div class="hexagram-block hexagram-serial">
+            <div class="hexagram-section hexagram-section-serial">
+              <!-- Quẻ 1: Tiểu Quỷ thấu tiền -->
               <div class="hex-block">
-                <h3 class="hex-name" id="r-main-name">—</h3>
-                <div id="main-gua" class="gua-diagram"></div>
-                <p class="gua-family">Họ <span id="r-main-family">—</span></p>
+                <h3 class="hex-name" id="r-left-name">—</h3>
+                <div id="left-gua" class="gua-diagram"></div>
+                <p class="gua-family">Họ <span id="r-left-family">—</span></p>
               </div>
 
-              <div class="change-arrow">
-                <p>BIẾN</p>
-                <span>→</span>
+              <!-- Quẻ 2: Trung quái / hợp lộc -->
+              <div class="hex-block">
+                <h3 class="hex-name" id="r-mid-name">—</h3>
+                <div id="mid-gua" class="gua-diagram"></div>
+                <p class="gua-family">Họ <span id="r-mid-family">—</span></p>
               </div>
 
-              <!-- Quẻ biến -->
+              <!-- Quẻ 3: Thời Ma phân đạo -->
               <div class="hex-block">
-                <h3 class="hex-name" id="r-change-name">—</h3>
-                <div id="change-gua" class="gua-diagram"></div>
-                <p class="gua-family">Họ <span id="r-change-family">—</span></p>
+                <h3 class="hex-name" id="r-right-name">—</h3>
+                <div id="right-gua" class="gua-diagram"></div>
+                <p class="gua-family">Họ <span id="r-right-family">—</span></p>
+              </div>
+            </div>
+
+            <!-- Dòng label như ảnh: TIỂU QUỶ THẤU TIỀN / THỜI MA PHÂN ĐẠO -->
+            <div class="serial-label-row">
+              <div class="serial-label serial-label-left" id="r-left-tag">
+                TIỂU QUỶ THẤU TIỀN
+              </div>
+              <div class="serial-label serial-label-mid" id="r-mid-tag">
+                <!-- nếu cần ghi HỢP KHÔN / HỢP LỘC… -->
+                —
+              </div>
+              <div class="serial-label serial-label-right" id="r-right-tag">
+                THỜI MA PHÂN ĐẠO
               </div>
             </div>
 
             <p class="moving-line">
-              Hào động: <strong><span id="r-moving">—</span></strong>
+              Hào động Tiểu Quỷ:
+              <strong><span id="r-moving-left">—</span></strong>
+              &nbsp;|&nbsp; Hào động Thời Ma:
+              <strong><span id="r-moving-right">—</span></strong>
             </p>
           </div>
 
-          <!-- Bảng Lục Hào -->
-          <!-- <div class="table-block">
-            <h2>Bảng Lục Hào</h2>
-            <table>
-              <thead>
-                <tr>
-                  <th>Hào</th>
-                  <th>Thế/Ứng</th>
-                  <th>Lục Thân (Chủ)</th>
-                  <th>Can (Chủ)</th>
-                  <th>Trạng thái</th>
-                  <th>Biến</th>
-                  <th>Lục Thân (Biến)</th>
-                  <th>Can (Biến)</th>
-                  <th>Trạng thái</th>
-                </tr>
-              </thead>
-              <tbody id="r-lines">
-                <tr>
-                  <td colspan="9">— Chưa có dữ liệu —</td>
-                </tr>
-              </tbody>
-            </table>
-          </div> -->
-
-          <!-- BẢNG LỤC HÀO KIỂU SIMKINHDICH -->
+          <!-- BẢNG LỤC HÀO: TRÁI = TIỂU QUỶ, PHẢI = THỜI MA -->
           <div class="table-block">
             <h2>Bảng Lục Hào</h2>
 
             <div class="luc-hao-wrapper">
-              <!-- ================== QUẺ CHỦ ================== -->
+              <!-- QUẺ CHỦ (TIỂU QUỶ) -->
               <div class="luc-hao-col">
-                <div class="lh-title">QUẺ CHỦ</div>
+                <div class="lh-title">TIỂU QUỶ THẤU TIỀN</div>
 
-                <!-- BẢNG 1: LỤC HÀO CHÍNH -->
                 <table class="lh-main">
                   <thead>
                     <tr>
@@ -249,7 +233,6 @@
                   </tbody>
                 </table>
 
-                <!-- BẢNG 2: V-S, QUÝ THẦN, THẦN SÁT -->
                 <table class="lh-vs">
                   <thead>
                     <tr>
@@ -267,7 +250,6 @@
                   </tbody>
                 </table>
 
-                <!-- BẢNG 3: LỘC, MÃ, QUÝ, ĐÀO, THẦN Y, GIẢI, MỘ -->
                 <table class="lh-stars">
                   <thead>
                     <tr>
@@ -289,11 +271,10 @@
                 </table>
               </div>
 
-              <!-- ================== QUẺ BIẾN ================== -->
+              <!-- QUẺ BIẾN (THỜI MA) -->
               <div class="luc-hao-col">
-                <div class="lh-title">QUẺ BIẾN</div>
+                <div class="lh-title">THỜI MA PHÂN ĐẠO</div>
 
-                <!-- BẢNG 1: LỤC HÀO BIẾN -->
                 <table class="lh-main">
                   <thead>
                     <tr>
@@ -311,7 +292,6 @@
                   </tbody>
                 </table>
 
-                <!-- BẢNG 2: V-S, THẦN SÁT -->
                 <table class="lh-vs">
                   <thead>
                     <tr>
@@ -328,7 +308,6 @@
                   </tbody>
                 </table>
 
-                <!-- BẢNG 3: LỘC, MÃ, QUÝ, ĐÀO, THẦN Y, GIẢI, MỘ -->
                 <table class="lh-stars">
                   <thead>
                     <tr>
@@ -354,86 +333,18 @@
         </section>
       </div>
 
+      <!-- FOOTER: bạn có thể copy y chang footer cũ -->
       <footer class="mv-footer">
         <div class="mv-footer-inner">
-          <!-- Cột 1: Logo + thông tin công ty -->
-          <div class="mv-footer-col mv-footer-col-company">
-            <div class="mv-footer-logo-wrap">
-              <img
-                src="../IMGS/LOGO-PTMV.png"
-                alt="Phong Thủy Minh Việt"
-                class="mv-footer-logo" />
-              <img
-                src="../IMGS/logo-da-thong-bao-bo-cong-thuong-mau-xanh.png"
-                alt="Đã thông báo Bộ Công Thương"
-                class="mv-footer-verify" />
-            </div>
-
-            <h3 class="mv-footer-title">
-              CÔNG TY TNHH HỌC VIỆN<br />
-              PHONG THỦY MINH VIỆT
-            </h3>
-
-            <ul class="mv-footer-list">
-              <li>
-                <strong>Địa chỉ Văn Phòng:</strong> 297/18 Huỳnh Văn Bánh, P.11,
-                Q. Phú Nhuận, TP.HCM
-              </li>
-              <li>
-                <strong>Địa chỉ Trụ Sở:</strong> 138 Đường B – Trưng Trắc, Khu
-                Phố 7, P. Hiệp Bình Chánh, Thủ Đức, TP.HCM
-              </li>
-              <li><strong>Hotline:</strong> 08 4531 4531</li>
-              <li><strong>Email:</strong> minhvietfengshui@gmail.com</li>
-              <li>
-                <strong>GPKD:</strong> 0314190665 do Sở KH &amp; ĐT TP.HCM cấp
-                ngày 09/01/2017
-              </li>
-            </ul>
-          </div>
-
-          <!-- Cột 2: Hỗ trợ khách hàng -->
-          <div class="mv-footer-col mv-footer-col-support">
-            <h3 class="mv-footer-title">HỖ TRỢ KHÁCH HÀNG</h3>
-            <ul class="mv-footer-list">
-              <li><a href="#">Chính Sách Bảo Mật Thông Tin Khách Hàng</a></li>
-              <li><a href="#">Chính Sách Đổi Trả, Kiểm Hàng</a></li>
-              <li>
-                <a href="#">Chính Sách Thanh Toán, Bán Hàng, Giao Nhận</a>
-              </li>
-              <li><a href="#">Chính Sách Hoàn Tiền, Hủy Giao Dịch</a></li>
-              <li><a href="#">Kiểm Tra Số Điện Thoại</a></li>
-            </ul>
-          </div>
-
-          <!-- Cột 3: Kết nối -->
-          <div class="mv-footer-col mv-footer-col-connect">
-            <h3 class="mv-footer-title">KẾT NỐI HỌC VIỆN</h3>
-            <div class="mv-footer-socials">
-              <a href="#" class="mv-social-btn mv-social-fb">f</a>
-              <a href="#" class="mv-social-btn mv-social-yt">▶</a>
-              <a href="#" class="mv-social-btn mv-social-cal">📅</a>
-            </div>
-
-            <h3 class="mv-footer-title mv-footer-title-sub">
-              KẾT NỐI MASTER NGUYỄN TUẤN CƯỜNG
-            </h3>
-            <a href="#" class="mv-footer-banner-link">
-              <img
-                src="../IMGS/banner-Lien-He-Final-1024x422.jpg"
-                alt="Liên hệ Master Nguyễn Tuấn Cường"
-                class="mv-footer-banner" />
-            </a>
-          </div>
+          <!-- ... footer giống trang chính ... -->
         </div>
-
         <div class="mv-footer-bottom">
           Bản quyền thuộc về <strong>Phong Thủy Minh Việt</strong> © 2025
         </div>
       </footer>
     </div>
 
-    <!-- JS Modules -->
-    <script type="module" src="./js/main.js"></script>
+    <!-- JS Serial -->
+    <script type="module" src="./js/serial.js"></script>
   </body>
 </html>
